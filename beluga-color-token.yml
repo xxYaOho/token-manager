@@ -1,0 +1,953 @@
+# 基础色板
+referenceToken:
+  colorModeConfig:
+    light: |
+      background=(#fff)
+      LND=(1.05 --> 16.25)(10~98)
+    dark: |
+      background=(#101010)(5%)
+      LND=(1.05 --> 16.25)
+  alpha:
+    - &alpha100 0
+    - &alpha200 3
+    - &alpha300 6
+    - &alpha400 12
+    - &alpha500 24
+    - &alpha600 36
+    - &alpha700 48
+    - &alpha800 60
+    - &alpha900 84
+    - &alpha950 100
+  grey:
+    benchmark: "#000000"
+    light:
+      - &ltGrey100 "#f9f9f9"
+      - &ltGrey200 "#dddddd"
+      - &ltGrey300 "#c2c2c2"
+      - &ltGrey400 "#a7a7a7"
+      - &ltGrey500 "#8e8e8e"
+      - &ltGrey600 "#757575"
+      - &ltGrey700 "#5d5d5d"
+      - &ltGrey800 "#464646"
+      - &ltGrey900 "#303030"
+      - &ltGrey950 "#1b1b1b"
+    dark:
+      - &dkGrey100 "#161616"
+      - &dkGrey200 "#2c2c2c"
+      - &dkGrey300 "#3e3e3e"
+      - &dkGrey400 "#515151"
+      - &dkGrey500 "#656565"
+      - &dkGrey600 "#7d7d7d"
+      - &dkGrey700 "#979797"
+      - &dkGrey800 "#b6b6b6"
+      - &dkGrey900 "#d7d7d7"
+      - &dkGrey950 "#f3f3f3"
+  deepGrey:
+    benchmark: "#242c42"
+    lightMode:
+      - &ltDeepGrey100 "#f9f9fa"
+      - &ltDeepGrey150 "#E9EAEC"
+      - &ltDeepGrey200 "#dcdde1"
+      - &ltDeepGrey300 "#bfc2c9"
+      - &ltDeepGrey400 "#a3a7b2"
+      - &ltDeepGrey500 "#888d9b"
+      - &ltDeepGrey600 "#6e7485"
+      - &ltDeepGrey700 "#555b6e"
+      - &ltDeepGrey800 "#3d4459"
+      - &ltDeepGrey900 "#262e44"
+      - &ltDeepGrey950 "#131a2f"
+    darkMode:
+      - &dkDeepGrey100 "#0e1528"
+      - &dkDeepGrey150 "#192139"
+      - &dkDeepGrey200 "#242c42"
+      - &dkDeepGrey300 "#363e53"
+      - &dkDeepGrey400 "#4a5165"
+      - &dkDeepGrey500 "#5f6577"
+      - &dkDeepGrey600 "#777d8c"
+      - &dkDeepGrey700 "#9398a4"
+      - &dkDeepGrey800 "#b3b6bf"
+      - &dkDeepGrey900 "#d5d7dc"
+      - &dkDeepGrey950 "#f3f3f5"
+  red:
+    benchmark: "#F53F3F"
+    light:
+      - &ltRed100 "#fff6f6"
+      - &ltRed200 "#ffd2d2"
+      - &ltRed300 "#ffacac"
+      - &ltRed400 "#ff8181"
+      - &ltRed500 "#fe4b4b"
+      - &ltRed600 "#dc2f2f"
+      - &ltRed700 "#b22020"
+      - &ltRed800 "#891616"
+      - &ltRed900 "#5f0f0f"
+      - &ltRed950 "#390909"
+    dark: &red-dark
+      - &dkRed100 "#310808"
+      - &dkRed200 "#5a0e0e"
+      - &dkRed300 "#7c1414"
+      - &dkRed400 "#a01b1b"
+      - &dkRed500 "#c32525"
+      - &dkRed600 "#ea3737"
+      - &dkRed700 "#ff6464"
+      - &dkRed800 "#ff9b9b"
+      - &dkRed900 "#ffcaca"
+      - &dkRed950 "#fff0f0"
+  redOrange:
+    benchmark: "#F77234"
+    light:
+      - &ltRedOrange100 "#fff7f3"
+      - &ltRedOrange200 "#ffd3bb"
+      - &ltRedOrange300 "#ffb085"
+      - &ltRedOrange400 "#ff854a"
+      - &ltRedOrange500 "#e86529"
+      - &ltRedOrange600 "#c3501b"
+      - &ltRedOrange700 "#9d3e12"
+      - &ltRedOrange800 "#772e0d"
+      - &ltRedOrange900 "#512009"
+      - &ltRedOrange950 "#2f1306"
+    dark:
+      - &dkRedOrange100 "#291005"
+      - &dkRedOrange200 "#4d1e08"
+      - &dkRedOrange300 "#6b2a0b"
+      - &dkRedOrange400 "#8c3710"
+      - &dkRedOrange500 "#ac4515"
+      - &dkRedOrange600 "#d1571f"
+      - &dkRedOrange700 "#f57032"
+      - &dkRedOrange800 "#ff9f6d"
+      - &dkRedOrange900 "#ffccb1"
+      - &dkRedOrange950 "#fff1e9"
+  green:
+    benchmark: "#00B42A"
+    light:
+      - &ltGreen100 "#f2fcf4"
+      - &ltGreen200 "#a8edb8"
+      - &ltGreen300 "#59db77"
+      - &ltGreen400 "#12c13b"
+      - &ltGreen500 "#00a41e"
+      - &ltGreen600 "#008712"
+      - &ltGreen700 "#006b0b"
+      - &ltGreen800 "#005107"
+      - &ltGreen900 "#003805"
+      - &ltGreen950 "#002103"
+    dark:
+      - &dkGreen100 "#001b03"
+      - &dkGreen200 "#003505"
+      - &dkGreen300 "#004906"
+      - &dkGreen400 "#005f09"
+      - &dkGreen500 "#00760d"
+      - &dkGreen600 "#009115"
+      - &dkGreen700 "#00b027"
+      - &dkGreen800 "#36d15a"
+      - &dkGreen900 "#95e9a9"
+      - &dkGreen950 "#e3f9e8"
+  greyBlue:
+    benchmark: "#797c86"
+    light:
+      - &ltGreyBlue100 "#f8f8f9"
+      - &ltGreyBlue125 "#EFEFF0"
+      - &ltGreyBlue150 "#E7E8E9"
+      - &ltGreyBlue200 "#dcdde0"
+      - &ltGreyBlue300 "#c0c2c8"
+      - &ltGreyBlue400 "#a4a7af"
+      - &ltGreyBlue500 "#8a8d96"
+      - &ltGreyBlue600 "#71747e"
+      - &ltGreyBlue700 "#595c64"
+      - &ltGreyBlue800 "#42454c"
+      - &ltGreyBlue900 "#2d2f34"
+      - &ltGreyBlue925 "#242629"
+      - &ltGreyBlue950 "#1a1b1e"
+    dark:
+      - &dkGreyBlue100 "#151618"
+      - &dkGreyBlue125 "#1D1E21"
+      - &dkGreyBlue150 "#242529"
+      - &dkGreyBlue200 "#2b2c31"
+      - &dkGreyBlue300 "#3c3e45"
+      - &dkGreyBlue400 "#4f5159"
+      - &dkGreyBlue500 "#63656f"
+      - &dkGreyBlue600 "#797c86"
+      - &dkGreyBlue700 "#9597a1"
+      - &dkGreyBlue800 "#b4b6bd"
+      - &dkGreyBlue900 "#d5d7db"
+      - &dkGreyBlue925 "#E6E7EA"
+      - &dkGreyBlue950 "#f3f3f5"
+  lightBlue:
+    benchmark: "#1856F2"
+    light:
+      - &ltHighBlue100 "#f7f9ff"
+      - &ltHighBlue200 "#ceddff"
+      - &ltHighBlue300 "#a7c2ff"
+      - &ltHighBlue400 "#7ea5ff"
+      - &ltHighBlue500 "#5587ff"
+      - &ltHighBlue600 "#2c67fe"
+      - &ltHighBlue700 "#0e4be3"
+      - &ltHighBlue800 "#0135b6"
+      - &ltHighBlue900 "#002383"
+      - &ltHighBlue950 "#00154e"
+    dark:
+      - &dkHighBlue100 "#001242"
+      - &dkHighBlue200 "#00217a"
+      - &dkHighBlue300 "#002fa7"
+      - &dkHighBlue400 "#0740d1"
+      - &dkHighBlue500 "#1755f1"
+      - &dkHighBlue600 "#3a73ff"
+      - &dkHighBlue700 "#6794ff"
+      - &dkHighBlue800 "#95b6ff"
+      - &dkHighBlue900 "#c6d7ff"
+      - &dkHighBlue950 "#eff3ff"
+  corerainBlue:
+    benchmark: "#1872F0"
+    light:
+      - &ltCorerainBlue100 "#f6faff"
+      - &ltCorerainBlue200 "#c6dfff"
+      - &ltCorerainBlue300 "#97c5ff"
+      - &ltCorerainBlue400 "#66a9ff"
+      - &ltCorerainBlue500 "#378bff"
+      - &ltCorerainBlue600 "#156eec"
+      - &ltCorerainBlue700 "#0555c6"
+      - &ltCorerainBlue800 "#003f9a"
+      - &ltCorerainBlue900 "#002b6b"
+      - &ltCorerainBlue950 "#001a3f"
+    dark:
+      - &dkCorerainBlue100 "#001637"
+      - &dkCorerainBlue200 "#002966"
+      - &dkCorerainBlue300 "#00398c"
+      - &dkCorerainBlue400 "#014bb3"
+      - &dkCorerainBlue500 "#095fd7"
+      - &dkCorerainBlue600 "#1f78f6"
+      - &dkCorerainBlue700 "#4b98ff"
+      - &dkCorerainBlue800 "#83baff"
+      - &dkCorerainBlue900 "#bbd9ff"
+      - &dkCorerainBlue950 "#edf4ff"
+  blue:
+    benchmark: "#3491FA"
+    light:
+      - &ltBlue100 "#f2f9ff"
+      - &ltBlue200 "#c0e1ff"
+      - &ltBlue300 "#8bc8ff"
+      - &ltBlue400 "#57abff"
+      - &ltBlue500 "#318ef6"
+      - &ltBlue600 "#1f74d3"
+      - &ltBlue700 "#155bab"
+      - &ltBlue800 "#0e4482"
+      - &ltBlue900 "#092f5a"
+      - &ltBlue950 "#061b34"
+    dark:
+      - &dkBlue100 "#05162a"
+      - &dkBlue200 "#092c54"
+      - &dkBlue300 "#0c3e76"
+      - &dkBlue400 "#11519a"
+      - &dkBlue500 "#1865bc"
+      - &dkBlue600 "#247de1"
+      - &dkBlue700 "#3e9aff"
+      - &dkBlue800 "#74bcff"
+      - &dkBlue900 "#b3dbff"
+      - &dkBlue950 "#eaf5ff"
+  gold:
+    benchmark: "#F7BA1E"
+    light:
+      - &ltGold100 "#fff9e4"
+      - &ltGold200 "#ffda5c"
+      - &ltGold300 "#f5b81c"
+      - &ltGold400 "#d69d0c"
+      - &ltGold500 "#b68406"
+      - &ltGold600 "#966d02"
+      - &ltGold700 "#785601"
+      - &ltGold800 "#5a4100"
+      - &ltGold900 "#3d2c01"
+      - &ltGold950 "#231a01"
+    dark:
+      - &dkGold100 "#1e1601"
+      - &dkGold200 "#3a2a01"
+      - &dkGold300 "#513b00"
+      - &dkGold400 "#6a4d01"
+      - &dkGold500 "#845f01"
+      - &dkGold600 "#a27503"
+      - &dkGold700 "#c38f08"
+      - &dkGold800 "#e8ad14"
+      - &dkGold900 "#ffd247"
+      - &dkGold950 "#fff3c8"
+  yellow:
+    benchmark: "#FADC19"
+    light:
+      - &ltYellow100 "#FEFFE8"
+      - &ltYellow200 "#FEFEBE"
+      - &ltYellow300 "#FDFA94"
+      - &ltYellow400 "#FCF26B"
+      - &ltYellow500 "#FBE842"
+      - &ltYellow600 "#FADC19"
+      - &ltYellow700 "#CFAF0F"
+      - &ltYellow800 "#A38408"
+      - &ltYellow900 "#785D03"
+      - &ltYellow950 "#4D3800"
+    dark:
+      - &dkYellow100 "#4D3800"
+      - &dkYellow200 "#785E07"
+      - &dkYellow300 "#A38614"
+      - &dkYellow400 "#CFB325"
+      - &dkYellow500 "#FAE13C"
+      - &dkYellow600 "#FBE94B"
+      - &dkYellow700 "#FCF374"
+      - &dkYellow800 "#FDFA9D"
+      - &dkYellow900 "#FEFEC6"
+      - &dkYellow950 "#FEFFF0"
+  purple:
+    benchmark: "#722ED1"
+    light:
+      - &ltPurple100 "#fbf8fe"
+      - &ltPurple200 "#e6d6fb"
+      - &ltPurple300 "#d3b5f8"
+      - &ltPurple400 "#bf93f4"
+      - &ltPurple500 "#aa73ef"
+      - &ltPurple600 "#9351e5"
+      - &ltPurple700 "#7930d3"
+      - &ltPurple800 "#5c1aaf"
+      - &ltPurple900 "#400e7f"
+      - &ltPurple950 "#26074c"
+    dark:
+      - &dkPurple100 "#1e0640"
+      - &dkPurple200 "#3a0d79"
+      - &dkPurple300 "#5016a2"
+      - &dkPurple400 "#6825c5"
+      - &dkPurple500 "#803ddc"
+      - &dkPurple600 "#985dea"
+      - &dkPurple700 "#b081f2"
+      - &dkPurple800 "#c9a8f7"
+      - &dkPurple900 "#e1cffa"
+      - &dkPurple950 "#f6f1fd"
+  cyan:
+    benchmark: "#14C9C9"
+    light:
+      - &ltCyan100 "#eefcfc"
+      - &ltCyan200 "#7ceeee"
+      - &ltCyan300 "#28d7d7"
+      - &ltCyan400 "#09b9b9"
+      - &ltCyan500 "#009e9e"
+      - &ltCyan600 "#008282"
+      - &ltCyan700 "#006868"
+      - &ltCyan800 "#004e4e"
+      - &ltCyan900 "#003636"
+      - &ltCyan950 "#001f1f"
+    dark:
+      - &dkCyan100 "#001a1a"
+      - &dkCyan200 "#003232"
+      - &dkCyan300 "#004646"
+      - &dkCyan400 "#005b5b"
+      - &dkCyan500 "#007171"
+      - &dkCyan600 "#008b8b"
+      - &dkCyan700 "#03a9a9"
+      - &dkCyan800 "#15caca"
+      - &dkCyan900 "#67eaea"
+      - &dkCyan950 "#d9fafa"
+  lime:
+    benchmark: "#9FDB1D"
+    light:
+      - &ltLime100 "#f2fdda"
+      - &ltLime200 "#b9ef43"
+      - &ltLime300 "#98d417"
+      - &ltLime400 "#81b70a"
+      - &ltLime500 "#6c9c04"
+      - &ltLime600 "#588101"
+      - &ltLime700 "#466600"
+      - &ltLime800 "#354d00"
+      - &ltLime900 "#253500"
+      - &ltLime950 "#151e01"
+    dark:
+      - &dkLime100 "#111801"
+      - &dkLime200 "#223100"
+      - &dkLime300 "#2f4500"
+      - &dkLime400 "#3e5a00"
+      - &dkLime500 "#4d7001"
+      - &dkLime600 "#5f8902"
+      - &dkLime700 "#74a706"
+      - &dkLime800 "#8ec810"
+      - &dkLime900 "#b0e933"
+      - &dkLime950 "#e7fcb8"
+  magenta:
+    benchmark: "#F5319D"
+    light:
+      - &ltMagenta100 "#fff8fc"
+      - &ltMagenta200 "#ffcfec"
+      - &ltMagenta300 "#ffa6dc"
+      - &ltMagenta400 "#ff76c8"
+      - &ltMagenta500 "#fd3ca6"
+      - &ltMagenta600 "#da2187"
+      - &ltMagenta700 "#b1146b"
+      - &ltMagenta800 "#880d51"
+      - &ltMagenta900 "#5f0939"
+      - &ltMagenta950 "#380622"
+    dark:
+      - &dkMagenta100 "#2f051c"
+      - &dkMagenta200 "#580834"
+      - &dkMagenta300 "#7a0c49"
+      - &dkMagenta400 "#9d115e"
+      - &dkMagenta500 "#c01875"
+      - &dkMagenta600 "#e72791"
+      - &dkMagenta700 "#ff56b7"
+      - &dkMagenta800 "#ff93d5"
+      - &dkMagenta900 "#ffc6e9"
+      - &dkMagenta950 "#ffeff8"
+# 语义层
+schemeToken:
+  lightMode:
+    basic:
+      black:
+        - "#000000"
+        - *alpha950
+      white:
+        - "#ffffff"
+        - *alpha950
+      none:
+        - "#ff00ff"
+        - *alpha100
+      debug:
+        - "#ff00ff"
+        - *alpha500
+    primary:
+      strong:
+        - *ltHighBlue700
+        - *alpha950
+      medium:
+        - *ltHighBlue600
+        - *alpha950
+      moderate:
+        - *ltHighBlue500
+        - *alpha950
+      soft:
+        - *ltHighBlue400
+        - *alpha950
+      ultraSoft:
+        - *ltHighBlue300
+        - *alpha950
+      expand:
+        disable:
+          - *ltHighBlue200
+          - *alpha950
+        background:
+          - *ltHighBlue100
+          - *alpha950
+    secondary:
+      strong:
+        - *ltDeepGrey950
+        - *alpha950
+      medium:
+        - *ltDeepGrey800
+        - *alpha950
+      moderate:
+        - *ltDeepGrey600
+        - *alpha950
+      soft:
+        - *ltDeepGrey400
+        - *alpha950
+      ultraSoft:
+        - *ltDeepGrey200
+        - *alpha950
+      expand:
+        disable:
+          - *ltDeepGrey150
+          - *alpha950
+        background:
+          - *ltDeepGrey100
+          - *alpha950
+    tertiary:
+      strong:
+        - *ltGreyBlue800
+        - *alpha950
+      medium:
+        - *ltGreyBlue600
+        - *alpha950
+      moderate:
+        - *ltGreyBlue400
+        - *alpha950
+      soft:
+        - *ltGreyBlue200
+        - *alpha950
+      ultraSoft:
+        - *ltGreyBlue100
+        - *alpha950
+      expand:
+        disable:
+          - *ltGreyBlue100
+          - *alpha950
+        background:
+          - *ltGreyBlue100
+          - *alpha950
+    font:
+      strong:
+        - *ltGreyBlue950
+        - *alpha950
+      medium:
+        - *ltGreyBlue925
+        - *alpha950
+      moderate:
+        - *ltGreyBlue700
+        - *alpha950
+      soft:
+        - *ltGreyBlue500
+        - *alpha950
+      ultraSoft:
+        - *ltGreyBlue400
+        - *alpha950
+      expand:
+        notes:
+          - *ltHighBlue400
+          - *alpha950
+    icon:
+      strong:
+        - *ltDeepGrey700
+        - *alpha950
+      medium:
+        - *ltDeepGrey500
+        - *alpha950
+      moderate:
+        - *ltDeepGrey300
+        - *alpha950
+      soft:
+        - *ltDeepGrey200
+        - *alpha950
+      ultraSoft: ~
+      expand:
+        disable:
+          - *ltDeepGrey200
+          - *alpha950
+    frame:
+      strong:
+        - *ltGreyBlue150
+        - *alpha950
+      medium:
+        - *ltGreyBlue125
+        - *alpha950
+      moderate:
+        - *ltGreyBlue100
+        - *alpha950
+      soft:
+        - "#ffffff"
+        - *alpha950
+      ultraSoft: ~
+    border:
+      strong:
+        - *ltGreyBlue200
+        - *alpha950
+      medium:
+        - *ltGreyBlue150
+        - *alpha950
+      moderate:
+        - *ltGreyBlue125
+        - *alpha950
+      soft:
+        - *ltGreyBlue100
+        - *alpha950
+      ultraSoft: ~
+    link:
+      strong:
+        - *ltBlue700
+        - *alpha950
+      medium:
+        - *ltBlue600
+        - *alpha950
+      moderate:
+        - *ltHighBlue500
+        - *alpha950
+      soft:
+        - *ltBlue400
+        - *alpha950
+      ultraSoft:
+        - *ltBlue300
+        - *alpha950
+      expand:
+        disable:
+          - *ltBlue200
+          - *alpha950
+        background:
+          - *ltBlue100
+          - *alpha950
+    success:
+      strong:
+        - *ltGreen700
+        - *alpha950
+      medium:
+        - *ltGreen600
+        - *alpha950
+      moderate:
+        - *ltGreen500
+        - *alpha950
+      soft:
+        - *ltGreen400
+        - *alpha950
+      ultraSoft:
+        - *ltGreen300
+        - *alpha950
+      expand:
+        disable:
+          - *ltGreen200
+          - *alpha950
+        background:
+          - *ltGreen100
+          - *alpha950
+    warning:
+      strong:
+        - *ltRedOrange700
+        - *alpha950
+      medium:
+        - *ltRedOrange600
+        - *alpha950
+      moderate:
+        - *ltRedOrange500
+        - *alpha950
+      soft:
+        - *ltRedOrange400
+        - *alpha950
+      ultraSoft:
+        - *ltRedOrange300
+        - *alpha950
+      expand:
+        disable:
+          - *ltRedOrange200
+          - *alpha950
+        background:
+          - *ltRedOrange100
+          - *alpha950
+    danger:
+      strong:
+        - *ltRed700
+        - *alpha950
+      medium:
+        - *ltRed600
+        - *alpha950
+      moderate:
+        - *ltRed500
+        - *alpha950
+      soft:
+        - *ltRed400
+        - *alpha950
+      ultraSoft:
+        - *ltRed300
+        - *alpha950
+      expand:
+        disable:
+          - *ltRed200
+          - *alpha950
+        background:
+          - *ltRed100
+          - *alpha950
+    alpha:
+      strong:
+        - "#000000"
+        - *alpha600
+      medium:
+        - "#000000"
+        - *alpha500
+      moderate:
+        - "#000000"
+        - *alpha400
+      soft:
+        - "#000000"
+        - *alpha300
+      ultraSoft:
+        - "#000000"
+        - *alpha200
+      expand:
+        isNull:
+          - "#000000"
+          - *alpha100
+  darkMode:
+    basic:
+      black:
+        - "#000000"
+        - *alpha950
+      white:
+        - "#ffffff"
+        - *alpha950
+      none:
+        - "#ff00ff"
+        - *alpha100
+      debug:
+        - "#ff00ff"
+        - *alpha500
+    primary:
+      strong:
+        - *dkHighBlue700
+        - *alpha950
+      medium:
+        - *dkHighBlue600
+        - *alpha950
+      moderate:
+        - *dkHighBlue500
+        - *alpha950
+      soft:
+        - *dkHighBlue400
+        - *alpha950
+      ultraSoft:
+        - *dkHighBlue300
+        - *alpha950
+      expand:
+        disable:
+          - *dkHighBlue200
+          - *alpha900
+        background:
+          - *dkHighBlue700
+          - *alpha400
+    secondary:
+      strong:
+        - *dkDeepGrey950
+        - *alpha950
+      medium:
+        - *dkDeepGrey800
+        - *alpha950
+      moderate:
+        - *dkDeepGrey600
+        - *alpha950
+      soft:
+        - *dkDeepGrey400
+        - *alpha950
+      ultraSoft:
+        - *dkDeepGrey200
+        - *alpha950
+      expand:
+        disable:
+          - *dkDeepGrey150
+          - *alpha900
+        background:
+          - *dkDeepGrey950
+          - *alpha400
+    tertiary:
+      strong:
+        - *dkGreyBlue900
+        - *alpha950
+      medium:
+        - *dkGreyBlue700
+        - *alpha950
+      moderate:
+        - *dkGreyBlue500
+        - *alpha950
+      soft:
+        - *dkGreyBlue300
+        - *alpha950
+      ultraSoft:
+        - *dkGreyBlue200
+        - *alpha950
+      expand:
+        disable:
+          - *dkGreyBlue200
+          - *alpha900
+        background:
+          - *dkGreyBlue900
+          - *alpha400
+    font:
+      strong:
+        - "#ffffff"
+        - *alpha950
+      medium:
+        - "#ffffff"
+        - *alpha900
+      moderate:
+        - "#ffffff"
+        - *alpha800
+      soft:
+        - "#ffffff"
+        - *alpha700
+      ultraSoft:
+        - "#ffffff"
+        - *alpha600
+      expand:
+        notes:
+          - "#ffffff"
+          - *alpha600
+    icon:
+      strong:
+        - *dkDeepGrey700
+        - *alpha950
+      medium:
+        - *dkDeepGrey500
+        - *alpha950
+      moderate:
+        - *dkDeepGrey300
+        - *alpha950
+      soft:
+        - *dkDeepGrey200
+        - *alpha950
+      ultraSoft: ~
+      expand:
+        disable:
+          - *dkDeepGrey700
+          - *alpha400
+    frame:
+      strong:
+        - *dkGreyBlue100
+        - *alpha600
+      medium:
+        - *dkGreyBlue100
+        - *alpha500
+      moderate:
+        - *dkGreyBlue100
+        - *alpha400
+      soft:
+        - *dkGreyBlue100
+        - *alpha300
+      ultraSoft: ~
+    border:
+      strong:
+        - *dkGrey900
+        - *alpha600
+      medium:
+        - *dkGrey900
+        - *alpha500
+      moderate:
+        - *dkGrey900
+        - *alpha400
+      soft:
+        - *dkGrey900
+        - *alpha300
+      ultraSoft: ~
+    link:
+      strong:
+        - *dkBlue800
+        - *alpha950
+      medium:
+        - *dkBlue700
+        - *alpha950
+      moderate:
+        - *dkHighBlue600
+        - *alpha950
+      soft:
+        - *dkBlue500
+        - *alpha950
+      ultraSoft:
+        - *dkBlue400
+        - *alpha950
+      expand:
+        disable:
+          - *dkBlue300
+          - *alpha900
+        background:
+          - *dkBlue800
+          - *alpha400
+    success:
+      strong:
+        - *dkGreen800
+        - *alpha950
+      medium:
+        - *dkGreen700
+        - *alpha950
+      moderate:
+        - *dkGreen500
+        - *alpha950
+      soft:
+        - *dkGreen500
+        - *alpha950
+      ultraSoft:
+        - *dkGreen400
+        - *alpha950
+      expand:
+        disable:
+          - *dkGreen300
+          - *alpha900
+        background:
+          - *dkGreen800
+          - *alpha400
+    warning:
+      strong:
+        - *dkRedOrange800
+        - *alpha950
+      medium:
+        - *dkRedOrange700
+        - *alpha950
+      moderate:
+        - *dkRedOrange500
+        - *alpha950
+      soft:
+        - *dkRedOrange500
+        - *alpha950
+      ultraSoft:
+        - *dkRedOrange400
+        - *alpha950
+      expand:
+        disable:
+          - *dkRedOrange300
+          - *alpha900
+        background:
+          - *dkRedOrange800
+          - *alpha400
+    danger:
+      strong:
+        - *dkRed800
+        - *alpha950
+      medium:
+        - *dkRed700
+        - *alpha950
+      moderate:
+        - *dkRed500
+        - *alpha950
+      soft:
+        - *dkRed400
+        - *alpha950
+      ultraSoft:
+        - *dkRed300
+        - *alpha950
+      expand:
+        disable:
+          - *dkRed200
+          - *alpha900
+        background:
+          - *dkRed800
+          - *alpha400
+    alpha:
+      strong:
+        - "#ffffff"
+        - *alpha600
+      medium:
+        - "#ffffff"
+        - *alpha500
+      moderate:
+        - "#ffffff"
+        - *alpha400
+      soft:
+        - "#ffffff"
+        - *alpha300
+      ultraSoft:
+        - "#ffffff"
+        - *alpha200
+      expand:
+        isNull:
+          - "#ffffff"
+          - *alpha100
+# 输出配置
+outputConfig:
+  general: &general
+    type:
+      - primary
+      - secondary
+      - tertiary
+      - font
+      - icon
+      - frame
+      - border
+      - alpha
+      - danger
+      - success
+      - warning
+    alias:
+      regular:
+        - Strong
+        - Medium
+        - Moderate
+        - Soft
+        - UltraSoft
+        - expand:
+            - Disable
+            - Background
+            - Notes
+  CSS:
+    exampleKey:
+      basic: --primary-1-strong
+      expand: --primary-6-disable #index从6开始
+    <<: *general
+  sketch:
+    exampleKey:
+      basic: var(--primary-1-strong)
+      expand: var(--primary-6-disable) #index从6开始
+    <<: *general
+  json:
+    exampleKey:
+      basic: primaryStrong
+      expand: primaryExpandDisable
+    <<: *general
