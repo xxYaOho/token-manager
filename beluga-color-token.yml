@@ -935,7 +935,7 @@ outputConfig:
         - expand:
             - Disable
             - Background
-            - Notes
+            - Note
   CSS:
     exampleKey:
       basic: --primary-1-strong
