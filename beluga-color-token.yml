@@ -936,18 +936,13 @@ outputConfig:
             - Disable
             - Background
             - Note
+  basic:
+    major: ~
+    alias: ~
   CSS:
-    exampleKey:
-      basic: --primary-1-strong
-      expand: --primary-6-disable #index从6开始
-    <<: *general
+    format: "--${major}-${index}-${alias}"
+    example: "--primary-1-strong"
   sketch:
-    exampleKey:
-      basic: var(--primary-1-strong)
-      expand: var(--primary-6-disable) #index从6开始
-    <<: *general
-  json:
-    exampleKey:
-      basic: primaryStrong
-      expand: primaryExpandDisable
-    <<: *general
+    format: "var(--${major}-${index}-${alias})"
+    exmaple: "var(--primary-1-strong)"
+  json: "${major}${alias}"
