@@ -514,32 +514,36 @@ schemeToken:
           - *alpha950
     frame:
       strong:
-        - *ltGreyBlue150
-        - *alpha950
+        - *ltGreyBlue900
+        - *alpha500
       medium:
-        - *ltGreyBlue125
-        - *alpha950
+        - *ltGreyBlue900
+        - *alpha400
       moderate:
-        - *ltGreyBlue100
-        - *alpha950
+        - *ltGreyBlue900
+        - *alpha300
       soft:
-        - "#ffffff"
-        - *alpha950
-      ultraSoft: ~
+        - *ltGreyBlue900
+        - *alpha200
+      ultraSoft:
+        - *ltGreyBlue900
+        - *alpha100
     border:
       strong:
-        - *ltGreyBlue200
-        - *alpha950
+        - *ltGreyBlue900
+        - *alpha700
       medium:
-        - *ltGreyBlue150
-        - *alpha950
+        - *ltGreyBlue900
+        - *alpha600
       moderate:
-        - *ltGreyBlue125
-        - *alpha950
+        - *ltGreyBlue900
+        - *alpha500
       soft:
-        - *ltGreyBlue100
-        - *alpha950
-      ultraSoft: ~
+        - *ltGreyBlue900
+        - *alpha400
+      ultraSoft:
+        - *ltGreyBlue900
+        - *alpha300
     link:
       strong:
         - *ltBlue700
@@ -778,32 +782,36 @@ schemeToken:
           - *alpha400
     frame:
       strong:
-        - *dkGreyBlue100
+        - *dkGreyBlue900
         - *alpha600
       medium:
-        - *dkGreyBlue100
+        - *dkGreyBlue900
         - *alpha500
       moderate:
-        - *dkGreyBlue100
+        - *dkGreyBlue900
         - *alpha400
       soft:
-        - *dkGreyBlue100
+        - *dkGreyBlue900
         - *alpha300
-      ultraSoft: ~
+      ultraSoft:
+        - *dkGreyBlue900
+        - *alpha200
     border:
       strong:
-        - *dkGrey900
-        - *alpha600
+        - *dkGreyBlue900
+        - *alpha700
       medium:
-        - *dkGrey900
-        - *alpha500
+        - *dkGreyBlue900
+        - *alpha600
       moderate:
-        - *dkGrey900
-        - *alpha400
+        - *dkGreyBlue900
+        - *alpha500
       soft:
-        - *dkGrey900
+        - *dkGreyBlue900
+        - *alpha400
+      ultraSoft:
+        - *dkGreyBlue900
         - *alpha300
-      ultraSoft: ~
     link:
       strong:
         - *dkBlue800
