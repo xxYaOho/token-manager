@@ -72,87 +72,61 @@ try {
 
     for (const key in colorMode) {
       if (colorMode[key] && typeof colorMode[key] === "object") {
-        if (key !== "background") {
-          result.push(...processSemanticColors(colorMode[key], key));
-        }
-      }
-    }
+        if (key === "basic") {
+          const basicColors = colorMode.basic;
+          for (const [basicKey, basicColor] of Object.entries(basicColors)) {
+            if (Array.isArray(basicColor)) {
+              const [colorValue, alphaValue] = basicColor;
+              const index = Object.keys(basicColors).indexOf(basicKey) + 1;
+              result.push(
+                generateSketchColor(
+                  "basic",
+                  index,
+                  basicKey,
+                  colorValue,
+                  alphaValue,
+                ),
+              );
+            }
+          }
+        } else if (key !== "background") {
+          const semanticColors = colorMode[key];
+          for (const [alias, color] of Object.entries(semanticColors)) {
+            if (Array.isArray(color)) {
+              const [colorValue, alphaValue] = color;
+              const index = Object.keys(semanticColors).indexOf(alias) + 1;
+              result.push(
+                generateSketchColor(key, index, alias, colorValue, alphaValue),
+              );
+            }
+          }
 
-    if (colorMode.basic && typeof colorMode.basic === "object") {
-      const basicColors = colorMode.basic;
-      for (const [basicKey, basicColor] of Object.entries(basicColors)) {
-        if (Array.isArray(basicColor)) {
-          const [colorValue, alphaValue] = basicColor;
-          const index = Object.keys(basicColors).indexOf(basicKey) + 1;
-          result.push(
-            generateSketchColor(
-              "basic",
-              index,
-              basicKey,
-              colorValue,
-              alphaValue,
-            ),
-          );
-        }
-      }
-    }
-
-    return result;
-  }
-
-  // 处理 lightMode 和 darkMode
-  function processColorMode(colorMode) {
-    const result = [];
-
-    for (const key in colorMode) {
-      if (key === "basic") {
-        const basicColors = colorMode.basic;
-        for (const [basicKey, basicColor] of Object.entries(basicColors)) {
-          if (Array.isArray(basicColor)) {
-            const [colorValue, alphaValue] = basicColor;
-            const index = Object.keys(basicColors).indexOf(basicKey) + 1;
-            result.push(
-              generateSketchColor(
-                "basic",
-                index,
-                basicKey,
-                colorValue,
-                alphaValue,
-              ),
-            );
+          if (
+            semanticColors.expand &&
+            typeof semanticColors.expand === "object"
+          ) {
+            for (const [alias, expandColor] of Object.entries(
+              semanticColors.expand,
+            )) {
+              if (expandColor && Array.isArray(expandColor)) {
+                const [colorValue, alphaValue] = expandColor;
+                const index =
+                  Object.keys(semanticColors).length +
+                  Object.keys(semanticColors.expand).indexOf(alias) +
+                  1;
+                result.push(
+                  generateSketchColor(
+                    key,
+                    index,
+                    alias,
+                    colorValue,
+                    alphaValue,
+                  ),
+                );
+              }
+            }
           }
         }
-      } else {
-        result.push(...processSemanticColors(colorMode[key]));
-      }
-    }
-
-    return result;
-  }
-
-  // 处理 lightMode 和 darkMode
-  function processColorMode(colorMode) {
-    const result = [];
-
-    for (const key in colorMode) {
-      if (key === "basic") {
-        const basicColors = colorMode.basic;
-        result.push(
-          ...Object.entries(basicColors).map(
-            ([basicKey, basicColor], index) => {
-              const [colorValue, alphaValue] = basicColor;
-              return generateSketchColor(
-                "basic",
-                index + 1,
-                basicKey,
-                colorValue,
-                alphaValue,
-              );
-            },
-          ),
-        );
-      } else {
-        result.push(...processSemanticColors(colorMode[key]));
       }
     }
 
@@ -162,11 +136,9 @@ try {
   // 处理输出结果
   function processOutput() {
     const lightModeColors = processColorMode(
-      inputData.schemeToken?.lightMode || {},
+      inputData.schemeToken?.light || {},
     );
-    const darkModeColors = processColorMode(
-      inputData.schemeToken?.darkMode || {},
-    );
+    const darkModeColors = processColorMode(inputData.schemeToken?.dark || {});
 
     console.log("lightMode:");
     console.log(lightModeColors.join("\n"));
