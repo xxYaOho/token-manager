@@ -2,7 +2,7 @@
 referenceToken:
   colorModeConfig:
     light: |
-      background=(#fff)
+      background=(#ffffff)
       LND=(1.05 --> 16.25)(10~98)
     dark: |
       background=(#101010)(5%)
@@ -390,6 +390,9 @@ referenceToken:
 schemeToken:
   lightMode:
     basic:
+      background:
+        - "#ffffff"
+        - *alpha950
       black:
         - "#000000"
         - *alpha950
@@ -650,6 +653,9 @@ schemeToken:
           - "#000000"
           - *alpha100
   darkMode:
+    background:
+      - "#101010"
+      - *alpha950
     basic:
       black:
         - "#000000"
