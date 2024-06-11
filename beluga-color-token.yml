@@ -926,7 +926,7 @@ schemeToken:
           - *alpha100
 # 输出配置
 outputConfig:
-  general: &general
+  general:
     type:
       - primary
       - secondary
@@ -940,13 +940,13 @@ outputConfig:
       - success
       - warning
     alias:
-      regular:
+      regular: #index+1
         - Strong
         - Medium
         - Moderate
         - Soft
         - UltraSoft
-        - expand:
+        - expand: #index +6
             - Disable
             - Background
             - Note
@@ -954,9 +954,9 @@ outputConfig:
     major: ~
     alias: ~
   CSS:
-    format: "--${major}-${index}-${alias}"
-    example: "--primary-1-strong"
+    format: "--${major}-${index}-${alias}: ${hexa}"
+    example: "--primary-1-strong: #123456ff"
   sketch:
-    format: "var(--${major}-${index}-${alias})"
-    exmaple: "var(--primary-1-strong)"
-  json: "${major}${alias}"
+    format: "var(--${major}-${index}-${alias}): ${hexa}"
+    exmaple: "var(--primary-1-strong): #123456ff"
+  json: "${major}${alias}: ${hexa}"
