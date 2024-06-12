@@ -492,7 +492,7 @@ schemeToken:
         - *alpha950
       expand:
         notes:
-          - *ltHighBlue400
+          - *ltGreyBlue400
           - *alpha950
     icon:
       strong:
