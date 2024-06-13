@@ -657,10 +657,10 @@ schemeToken:
           - "#000000"
           - *alpha100
   dark:
-    background:
-      - "#101010"
-      - *alpha950
     basic:
+      background:
+        - "#101010"
+        - *alpha950
       black:
         - "#000000"
         - *alpha950
@@ -951,14 +951,23 @@ outputConfig:
         - Background
         - Note
   CSS:
+    file-format: css
     format: "--${major}-${index}-${alias}: ${hexa};"
     example: "--primary-1-strong: #123456ff;"
   sketch:
+    file-format: md
     format: "var(--${major}-${index}-${alias}): ${hexa};"
     exmaple: "var(--primary-1-strong): #123456ff;"
   json:
+    file-format: json
     format: "${major}${alias}: ${hexa}"
     exmaple: "primaryStrong: #123456ff"
+  jsonP:
+    #protopie
+    file-format: json
+    format: "${major}${alias}: [${hex},&{alpha}]"
+    exmaple: "primaryStrong: ['#123456',100]"
   javascript:
+    file-format: md
     format: "${major}-${index}-${alias}: '${hexa}'"
     example: "primary-1-strong: '#123456ff'"
