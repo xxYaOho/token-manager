@@ -422,7 +422,7 @@ schemeToken:
         - *ltHighBlue300
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *ltHighBlue200
           - *alpha950
         background:
@@ -445,7 +445,7 @@ schemeToken:
         - *ltDeepGrey200
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *ltDeepGrey150
           - *alpha950
         background:
@@ -468,7 +468,7 @@ schemeToken:
         - *ltGreyBlue100
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *ltGreyBlue100
           - *alpha950
         background:
@@ -509,7 +509,7 @@ schemeToken:
         - *alpha950
       ultraSoft: ~
       expand:
-        disable:
+        disabled:
           - *ltDeepGrey200
           - *alpha950
     frame:
@@ -561,7 +561,7 @@ schemeToken:
         - *ltBlue300
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *ltBlue200
           - *alpha950
         background:
@@ -584,7 +584,7 @@ schemeToken:
         - *ltGreen300
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *ltGreen200
           - *alpha950
         background:
@@ -607,7 +607,7 @@ schemeToken:
         - *ltRedOrange300
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *ltRedOrange200
           - *alpha950
         background:
@@ -630,7 +630,7 @@ schemeToken:
         - *ltRed300
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *ltRed200
           - *alpha950
         background:
@@ -690,7 +690,7 @@ schemeToken:
         - *dkHighBlue300
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *dkHighBlue200
           - *alpha900
         background:
@@ -713,7 +713,7 @@ schemeToken:
         - *dkDeepGrey200
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *dkDeepGrey150
           - *alpha900
         background:
@@ -736,7 +736,7 @@ schemeToken:
         - *dkGreyBlue200
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *dkGreyBlue200
           - *alpha900
         background:
@@ -777,7 +777,7 @@ schemeToken:
         - *alpha950
       ultraSoft: ~
       expand:
-        disable:
+        disabled:
           - *dkDeepGrey700
           - *alpha400
     frame:
@@ -829,7 +829,7 @@ schemeToken:
         - *dkBlue400
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *dkBlue300
           - *alpha900
         background:
@@ -852,7 +852,7 @@ schemeToken:
         - *dkGreen400
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *dkGreen300
           - *alpha900
         background:
@@ -875,7 +875,7 @@ schemeToken:
         - *dkRedOrange400
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *dkRedOrange300
           - *alpha900
         background:
@@ -898,7 +898,7 @@ schemeToken:
         - *dkRed300
         - *alpha950
       expand:
-        disable:
+        disabled:
           - *dkRed200
           - *alpha900
         background:
@@ -947,13 +947,18 @@ outputConfig:
         - Soft
         - UltraSoft
       expand: #index +6
-        - Disable
+        - disabled
         - Background
         - Note
   CSS:
-    format: "--${major}-${index}-${alias}: ${hexa}"
-    example: "--primary-1-strong: #123456ff"
+    format: "--${major}-${index}-${alias}: ${hexa};"
+    example: "--primary-1-strong: #123456ff;"
   sketch:
-    format: "var(--${major}-${index}-${alias}): ${hexa}"
-    exmaple: "var(--primary-1-strong): #123456ff"
-  json: "${major}${alias}: ${hexa}"
+    format: "var(--${major}-${index}-${alias}): ${hexa};"
+    exmaple: "var(--primary-1-strong): #123456ff;"
+  json:
+    format: "${major}${alias}: ${hexa}"
+    exmaple: "primaryStrong: #123456ff"
+  javascript:
+    format: "${major}-${index}-${alias}: '${hexa}'"
+    example: "primary-1-strong: '#123456ff'"

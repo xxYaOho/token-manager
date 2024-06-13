@@ -1,10 +1,11 @@
 const fs = require("fs");
 const YAML = require("js-yaml");
+const path = require("path");
 
 try {
   // 读取 YAML 文件并解析为 JavaScript 对象
   const inputData = YAML.load(
-    fs.readFileSync("beluga-color-token.yml", "utf8"),
+    fs.readFileSync(path.join(__dirname, "../beluga-color-token.yml"), "utf8"),
   );
 
   // 将 alpha 值从 0-100 转换为 0-255
@@ -140,11 +141,13 @@ try {
     );
     const darkModeColors = processColorMode(inputData.schemeToken?.dark || {});
 
-    console.log("lightMode:");
+    console.log("const lightModeColors = {");
     console.log(lightModeColors.join("\n"));
+    console.log("};");
 
-    console.log("\ndarkMode:");
+    console.log("\nconst darkModeColors = {");
     console.log(darkModeColors.join("\n"));
+    console.log("};");
   }
 
   processOutput();
