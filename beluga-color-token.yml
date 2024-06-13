@@ -418,7 +418,7 @@ schemeToken:
       soft:
         - *ltHighBlue400
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *ltHighBlue300
         - *alpha950
       expand:
@@ -441,7 +441,7 @@ schemeToken:
       soft:
         - *ltDeepGrey400
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *ltDeepGrey200
         - *alpha950
       expand:
@@ -464,7 +464,7 @@ schemeToken:
       soft:
         - *ltGreyBlue200
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *ltGreyBlue100
         - *alpha950
       expand:
@@ -487,7 +487,7 @@ schemeToken:
       soft:
         - *ltGreyBlue500
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *ltGreyBlue400
         - *alpha950
       expand:
@@ -507,7 +507,7 @@ schemeToken:
       soft:
         - *ltDeepGrey200
         - *alpha950
-      ultraSoft: ~
+      ultra-soft: ~
       expand:
         disabled:
           - *ltDeepGrey200
@@ -525,7 +525,7 @@ schemeToken:
       soft:
         - *ltGreyBlue900
         - *alpha200
-      ultraSoft:
+      ultra-soft:
         - *ltGreyBlue900
         - *alpha100
     border:
@@ -541,7 +541,7 @@ schemeToken:
       soft:
         - *ltGreyBlue900
         - *alpha400
-      ultraSoft:
+      ultra-soft:
         - *ltGreyBlue900
         - *alpha300
     link:
@@ -557,7 +557,7 @@ schemeToken:
       soft:
         - *ltBlue400
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *ltBlue300
         - *alpha950
       expand:
@@ -580,7 +580,7 @@ schemeToken:
       soft:
         - *ltGreen400
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *ltGreen300
         - *alpha950
       expand:
@@ -603,7 +603,7 @@ schemeToken:
       soft:
         - *ltRedOrange400
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *ltRedOrange300
         - *alpha950
       expand:
@@ -626,7 +626,7 @@ schemeToken:
       soft:
         - *ltRed400
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *ltRed300
         - *alpha950
       expand:
@@ -649,11 +649,11 @@ schemeToken:
       soft:
         - "#000000"
         - *alpha300
-      ultraSoft:
+      ultra-soft:
         - "#000000"
         - *alpha200
       expand:
-        isNull:
+        is-null:
           - "#000000"
           - *alpha100
   dark:
@@ -686,7 +686,7 @@ schemeToken:
       soft:
         - *dkHighBlue400
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *dkHighBlue300
         - *alpha950
       expand:
@@ -709,7 +709,7 @@ schemeToken:
       soft:
         - *dkDeepGrey400
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *dkDeepGrey200
         - *alpha950
       expand:
@@ -732,7 +732,7 @@ schemeToken:
       soft:
         - *dkGreyBlue300
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *dkGreyBlue200
         - *alpha950
       expand:
@@ -755,7 +755,7 @@ schemeToken:
       soft:
         - "#ffffff"
         - *alpha700
-      ultraSoft:
+      ultra-soft:
         - "#ffffff"
         - *alpha600
       expand:
@@ -775,7 +775,7 @@ schemeToken:
       soft:
         - *dkDeepGrey200
         - *alpha950
-      ultraSoft: ~
+      ultra-soft: ~
       expand:
         disabled:
           - *dkDeepGrey700
@@ -793,7 +793,7 @@ schemeToken:
       soft:
         - *dkGreyBlue900
         - *alpha300
-      ultraSoft:
+      ultra-soft:
         - *dkGreyBlue900
         - *alpha200
     border:
@@ -809,7 +809,7 @@ schemeToken:
       soft:
         - *dkGreyBlue900
         - *alpha400
-      ultraSoft:
+      ultra-soft:
         - *dkGreyBlue900
         - *alpha300
     link:
@@ -825,7 +825,7 @@ schemeToken:
       soft:
         - *dkBlue500
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *dkBlue400
         - *alpha950
       expand:
@@ -848,7 +848,7 @@ schemeToken:
       soft:
         - *dkGreen500
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *dkGreen400
         - *alpha950
       expand:
@@ -871,7 +871,7 @@ schemeToken:
       soft:
         - *dkRedOrange500
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *dkRedOrange400
         - *alpha950
       expand:
@@ -894,7 +894,7 @@ schemeToken:
       soft:
         - *dkRed400
         - *alpha950
-      ultraSoft:
+      ultra-soft:
         - *dkRed300
         - *alpha950
       expand:
@@ -917,11 +917,11 @@ schemeToken:
       soft:
         - "#ffffff"
         - *alpha300
-      ultraSoft:
+      ultra-soft:
         - "#ffffff"
         - *alpha200
       expand:
-        isNull:
+        is-null:
           - "#ffffff"
           - *alpha100
 # 输出配置

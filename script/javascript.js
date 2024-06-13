@@ -24,15 +24,14 @@ try {
   // 处理语义层颜色
   function processSemanticColors(semanticColors, major) {
     const result = [];
-
     const colors = semanticColors;
     const aliases = inputData.outputConfig?.general?.alias?.regular || [];
+    let index = 1;
 
     if (colors && typeof colors === "object") {
       for (const [alias, color] of Object.entries(colors)) {
         if (Array.isArray(color) && aliases.includes(alias)) {
           const [colorValue, alphaValue] = color;
-          const index = aliases.indexOf(alias) + 1;
           result.push(
             generateJavaScriptColor(
               major,
@@ -42,6 +41,7 @@ try {
               alphaValue,
             ),
           );
+          index++;
         }
       }
 
@@ -55,16 +55,16 @@ try {
             expandAliases.includes(alias)
           ) {
             const [colorValue, alphaValue] = expandColor;
-            const index = expandAliases.indexOf(alias) + 1;
             result.push(
               generateJavaScriptColor(
                 major,
-                aliases.length + index,
+                index,
                 alias,
                 colorValue,
                 alphaValue,
               ),
             );
+            index++;
           }
         }
       }
@@ -81,10 +81,10 @@ try {
       if (colorMode[key] && typeof colorMode[key] === "object") {
         if (key === "basic") {
           const basicColors = colorMode.basic;
+          let index = 1;
           for (const [basicKey, basicColor] of Object.entries(basicColors)) {
             if (Array.isArray(basicColor)) {
               const [colorValue, alphaValue] = basicColor;
-              const index = Object.keys(basicColors).indexOf(basicKey) + 1;
               result.push(
                 generateJavaScriptColor(
                   "basic",
@@ -94,14 +94,15 @@ try {
                   alphaValue,
                 ),
               );
+              index++;
             }
           }
         } else if (key !== "background") {
           const semanticColors = colorMode[key];
+          let index = 1;
           for (const [alias, color] of Object.entries(semanticColors)) {
             if (Array.isArray(color)) {
               const [colorValue, alphaValue] = color;
-              const index = Object.keys(semanticColors).indexOf(alias) + 1;
               result.push(
                 generateJavaScriptColor(
                   key,
@@ -111,6 +112,7 @@ try {
                   alphaValue,
                 ),
               );
+              index++;
             }
           }
 
@@ -123,10 +125,6 @@ try {
             )) {
               if (expandColor && Array.isArray(expandColor)) {
                 const [colorValue, alphaValue] = expandColor;
-                const index =
-                  Object.keys(semanticColors).length +
-                  Object.keys(semanticColors.expand).indexOf(alias) +
-                  1;
                 result.push(
                   generateJavaScriptColor(
                     key,
@@ -136,6 +134,7 @@ try {
                     alphaValue,
                   ),
                 );
+                index++;
               }
             }
           }
