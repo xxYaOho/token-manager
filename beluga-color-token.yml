@@ -843,7 +843,7 @@ schemeToken:
         - *dkGreen700
         - *alpha950
       moderate:
-        - *dkGreen500
+        - *dkGreen600
         - *alpha950
       soft:
         - *dkGreen500
@@ -866,7 +866,7 @@ schemeToken:
         - *dkRedOrange700
         - *alpha950
       moderate:
-        - *dkRedOrange500
+        - *dkRedOrange600
         - *alpha950
       soft:
         - *dkRedOrange500
@@ -889,17 +889,17 @@ schemeToken:
         - *dkRed700
         - *alpha950
       moderate:
-        - *dkRed500
+        - *dkRed600
         - *alpha950
       soft:
-        - *dkRed400
+        - *dkRed500
         - *alpha950
       ultra-soft:
-        - *dkRed300
+        - *dkRed400
         - *alpha950
       expand:
         disabled:
-          - *dkRed200
+          - *dkRed300
           - *alpha900
         background:
           - *dkRed800
