@@ -907,19 +907,19 @@ schemeToken:
     alpha:
       strong:
         - "#ffffff"
-        - *alpha600
+        - *alpha700
       medium:
         - "#ffffff"
-        - *alpha500
+        - *alpha600
       moderate:
         - "#ffffff"
-        - *alpha400
+        - *alpha500
       soft:
         - "#ffffff"
-        - *alpha300
+        - *alpha400
       ultra-soft:
         - "#ffffff"
-        - *alpha200
+        - *alpha300
       expand:
         is-null:
           - "#ffffff"
