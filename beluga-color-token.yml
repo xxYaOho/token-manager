@@ -552,7 +552,7 @@ schemeToken:
         - *ltBlue600
         - *alpha950
       moderate:
-        - *ltHighBlue500
+        - *ltBlue500
         - *alpha950
       soft:
         - *ltBlue400
@@ -820,7 +820,7 @@ schemeToken:
         - *dkBlue700
         - *alpha950
       moderate:
-        - *dkHighBlue600
+        - *dkBlue600
         - *alpha950
       soft:
         - *dkBlue500
